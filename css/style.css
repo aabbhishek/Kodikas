@@ -38,16 +38,21 @@ margin: unset;
 	height: calc(100% - 75px);
 	position: relative;
 }
+@keyframes back_main {
+    from {	background: linear-gradient(to right,#250936,#030414);}
+    to {	background: linear-gradient(to right,#030414,#250936);}
+}
+
+
 .ad-con {
 	/*background-color: #000;*/
 
 	overflow: hidden;
-	background: linear-gradient(to right,#250936,#030414);
-	background-repeat: no-repeat;
-	background-size: cover;
 	position: relative;
-	//background-position: 0 -0px,0 -150px;
-	background-attachment:fixed;
+	transition: 5s;
+	animation-name: back_main;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 .body-title {
 	text-align: center;
@@ -60,7 +65,7 @@ margin: unset;
 	color: #fff;
 	font-family: RR;
 
-}.hand-font{font-family: si !important;}
+}.hand-font{font-family: si !important;font-size: 30px;}
 
 @keyframes rotate_image {
     0% {	-ms-transform: rotate(0deg); /* IE 9 */
