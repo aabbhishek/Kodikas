@@ -85,10 +85,16 @@ margin: unset;
 
 }
 
-.back_1{ animation-name: rotate_image; animation-duration: 10s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
-.back_2{ animation-name: rotate_image; animation-duration: 8s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
-.back_3{ animation-name: rotate_image; animation-duration: 7s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
-.back_4{ animation-name: rotate_image; animation-duration: 6s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_1{ animation-name: rotate_image; animation-duration: 12s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_2{ animation-name: rotate_image; animation-duration: 11s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_3{ animation-name: rotate_image; animation-duration: 10s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_4{ animation-name: rotate_image; animation-duration: 9s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_5{ animation-name: rotate_image; animation-duration: 8s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_6{ animation-name: rotate_image; animation-duration: 7s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_7{ animation-name: rotate_image; animation-duration: 6s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_8{ animation-name: rotate_image; animation-duration: 5s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_9{ animation-name: rotate_image; animation-duration: 4s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_10{ animation-name: rotate_image; animation-duration: 3s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
 
 .flick {
 	display: block;
