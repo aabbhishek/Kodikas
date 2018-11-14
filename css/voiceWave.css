@@ -1,0 +1,44 @@
+
+div.soundWave {
+  position: relative;
+}
+
+.soundWave span {
+  display: block;
+  bottom: 0px;
+  width: 9px;
+  height: 5px;
+  background: #333;
+  position: absolute;
+  animation: audio-wave 1.5s infinite ease-in-out;
+}
+
+.soundWave span:nth-child(2) {
+left: 11px;
+animation-delay: 0.2s;
+}
+
+.soundWave span:nth-child(3) {
+left: 22px;
+animation-delay: 0.4s;
+}
+
+.soundWave span:nth-child(4) {
+left: 33px;
+animation-delay: 0.6s;
+}
+
+.soundWave span:nth-child(5) {
+left: 44px;
+animation-delay: 0.8s;
+}
+
+@keyframes audio-wave {
+    0% {height:5px;transform:translateY(0px);background:#333;}
+    25% {height:40px;transform:translateY(20px);background:#3498db;}
+/*effect is to animate the height of each span from 5px to 30px*/
+/*translateY makes Y axis move down to give the effect that it is growing from the center*/
+
+    50% {height:5px;transform:translateY(0px);background:#333;}
+    100% {height:5px;transform:translateY(0px);background:#333;}
+}
