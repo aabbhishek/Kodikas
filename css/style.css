@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 @import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 
+
 @font-face {
 	font-family: 'Gotham';
 	src: url('../fonts/GothamSSm-Book.ttf');
@@ -13,6 +14,10 @@
 @font-face {
     font-family: 'RR';
     src: url('../fonts/geb.otf');
+}
+@font-face {
+    font-family: 'si';
+    src: url('../fonts/si.ttf');
 }
 html,body {
 	width: 100%;
@@ -54,7 +59,8 @@ margin: unset;
 	font-size: 40px;
 	color: #fff;
 	font-family: RR;
-}
+
+}.hand-font{font-family: si !important;}
 .flick {
 	display: block;
 	height: 100px;
