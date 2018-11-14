@@ -60,28 +60,18 @@ $(document).ready(function() {
 	        return false;
 	    }
 	}*/
+
 	
-	setTimeout(function() {
-		$("g text").html("MEET YOUR AI MAYA");
-	},3500);
-	setTimeout(function() {
-		$("g text").html("which will help you");
-	},7000);
-	setTimeout(function() {
-		$("g text").html("CREATE WEBSITES AND DEVELOP CODES").attr('x',0);
-		$(".sv1").attr('width',1150);
-	},11500);
-});
 
 $(document).ready(function() {
-	$(".click_to_speak").click(function(){ 
+	$(".click_to_speak").click(function(){
 		$("#speak-modal").modal();
 		$(".listenedText p").html('Speak...');
 		s='';
 		recognition.start();
-	});	
+	});
 
-	$(".stop-speech").click(function(){ 
+	$(".stop-speech").click(function(){
 		recognition.stop();
 		$(".get-text").val(s);
 		$.ajax({
@@ -101,21 +91,21 @@ $(document).ready(function() {
 		// setTimeout(function() {
 		// 	$(".processedText p").html(s);
 		// },3000);
-	});	
-	$(".reset-speech").click(function(){ 
+	});
+	$(".reset-speech").click(function(){
 		$(".listenedText p").html('Listening ...');
 		s='';
-	});	
-	
+	});
+
 	$(".mic-speak").click(function(){
 		$("#model_speak_open").modal();
 		$(".listenedText p").html('Listening ...');
 		s='';
-		recognition.start();	
+		recognition.start();
 	});
-	$(".stop-speech").click(function(){ 
+	$(".stop-speech").click(function(){
 		recognition.stop();
 		$(".wysiwyg-editor").html(s);
-	});	
-	
+	});
+
 });
