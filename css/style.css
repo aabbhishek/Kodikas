@@ -61,6 +61,35 @@ margin: unset;
 	font-family: RR;
 
 }.hand-font{font-family: si !important;}
+
+@keyframes rotate_image {
+    0% {	-ms-transform: rotate(0deg); /* IE 9 */
+		  			-webkit-transform: rotate(0deg); /* Safari */
+		  			transform: rotate(0deg);}
+
+	  25% {	-ms-transform: rotate(90deg); /* IE 9 */
+		  		-webkit-transform: rotate(90deg); /* Safari */
+		  		transform: rotate(90deg);}
+
+		50% {	-ms-transform: rotate(180deg); /* IE 9 */
+				  -webkit-transform: rotate(180deg); /* Safari */
+					transform: rotate(180deg);}
+
+		70% {	-ms-transform: rotate(270deg); /* IE 9 */
+			    -webkit-transform: rotate(270deg); /* Safari */
+					transform: rotate(270deg);}
+
+		100% {	-ms-transform: rotate(360deg); /* IE 9 */
+						-webkit-transform: rotate(360deg); /* Safari */
+						transform: rotate(360deg);}
+
+}
+
+.back_1{ animation-name: rotate_image; animation-duration: 10s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_2{ animation-name: rotate_image; animation-duration: 8s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_3{ animation-name: rotate_image; animation-duration: 7s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+.back_4{ animation-name: rotate_image; animation-duration: 6s;animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+
 .flick {
 	display: block;
 	height: 100px;
