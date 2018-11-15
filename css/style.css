@@ -35,7 +35,7 @@ margin: unset;
 }
 .container > div {
 	width: 100%;
-	height: calc(100% - 75px);
+	height: 100%;
 	position: relative;
 }
 
@@ -418,4 +418,15 @@ a.kn:hover {
 .listenedText p {
     font-size: 18px;
     min-height: 30px;
+}
+
+.modal-cus {
+	width: calc(100% - 85px);
+	max-width: unset;
+	height: 100%;
+	margin: 0;
+	margin-left: 80px;
+}
+.modal-cus > div {
+	height: 100%;
 }
