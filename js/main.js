@@ -61,9 +61,6 @@ $(document).ready(function() {
 	    }
 	}*/
 
-	
-
-$(document).ready(function() {
 	$(".click_to_speak").click(function(){
 		$("#speak-modal").modal();
 		$(".listenedText p").html('Speak...');
@@ -92,6 +89,7 @@ $(document).ready(function() {
 		// 	$(".processedText p").html(s);
 		// },3000);
 	});
+
 	$(".reset-speech").click(function(){
 		$(".listenedText p").html('Listening ...');
 		s='';
