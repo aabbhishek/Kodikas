@@ -419,14 +419,15 @@ a.kn:hover {
     font-size: 18px;
     min-height: 30px;
 }
-
 .modal-cus {
 	width: calc(100% - 85px);
 	max-width: unset;
 	height: 100%;
 	margin: 0;
 	margin-left: 80px;
+}.modal-content{
+	background-color: rgba(0,0,0,0.3)!important;
 }
 .modal-cus > div {
 	height: 100%;
-}
+}.active_speak{	color:#fff; font-size:30px; position: relative; left: 12px;	top: 7px;}
