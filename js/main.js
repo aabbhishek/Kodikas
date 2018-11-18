@@ -11,6 +11,8 @@ $(document).ready(function() {
 	$(".voice-open").on("click",function() {
 		$("#speak-modal").modal();
 	});
+
+
 	//$(".scroll-next").on("click",function() {
 		// if($(this).hasClass("active")) {
 		// 	$(this).removeClass("active");
