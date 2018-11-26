@@ -481,7 +481,7 @@ a.kn:hover {
  top: 200px;
  left: 80px;
 }.dis-maya{
-	background-color: #ff4c14;
+	background-color: #5f1889;
 	height: 657px;
 	width: 600px!important;
 	-ms-transform: skewX(-20deg); /* IE 9 */
@@ -501,4 +501,17 @@ a.kn:hover {
 .action-con > div.row {
 	flex-wrap: nowrap;
 }.maya-title{	color: #fff;font-family: Azonix;
-						 margin-left: 80px;margin-top: 220px;}
+						 margin-left: 80px;margin-top: 170px;}
+.big-button{
+	height: 100px;
+	width: 100px;
+	border: 0px;
+	background-color: #0e0414;
+	border-radius: 100px;
+	font-size: 30px;
+	margin-left: 250px;
+	margin-top: 50px;
+	cursor: pointer;
+	box-shadow: 3px 3px 5px #0e0414;
+	color: #FFF;
+}
