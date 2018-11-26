@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
 
 
+
 @font-face {
 	font-family: 'Gotham';
 	src: url('../fonts/GothamSSm-Book.ttf');
@@ -22,6 +23,10 @@
 @font-face {
     font-family: 'Merkur';
     src: url('../fonts/Merkur.ttf');
+}
+@font-face {
+    font-family: 'Azonix';
+    src: url('../fonts/Azonix.otf');
 }
 html,body {
 	width: 100%;
@@ -485,10 +490,15 @@ a.kn:hover {
 	flex: unset;
     min-width: 1000px;
     max-width: 1000px;
+
 }
 .dis-maya * {
 	transform: skewX(20deg);
 }
+.dis-maya * *{
+	transform: skewX(0deg);
+}
 .action-con > div.row {
 	flex-wrap: nowrap;
-}.maya-title{	color: #fff;font-family: Permanent;}
+}.maya-title{	color: #fff;font-family: Azonix;
+						 margin-left: 80px;margin-top: 220px;}
