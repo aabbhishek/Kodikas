@@ -289,6 +289,7 @@ margin: unset;
 	background-color: #eaeaea;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	overflow: hidden;
 }
 .action-con.active {
 	transition-delay: 0.3s;
@@ -476,21 +477,20 @@ a.kn:hover {
 	height: 100%;
 }.active_speak{	color:#fff; font-size:30px; position: relative; left: 12px;	top: 7px;}
 .talk-text-color{color: #fff;}
-.head-maya{
+.head-maya h1{
  position: relative;
  top: 200px;
  left: 80px;
 }.dis-maya{
 	background-color: #5f1889;
 	height: 657px;
-	width: 600px!important;
+	width: 600px !important;
 	-ms-transform: skewX(-20deg); /* IE 9 */
 	-webkit-transform: skewX(-20deg); /* Safari */
 	transform: skewX(-20deg); /* Standard syntax */
 	flex: unset;
-    min-width: 1000px;
-    max-width: 1000px;
-
+  min-width: 1000px;
+  max-width: 1000px;
 }
 .dis-maya * {
 	transform: skewX(20deg);
@@ -514,4 +514,12 @@ a.kn:hover {
 	cursor: pointer;
 	box-shadow: 3px 3px 5px #0e0414;
 	color: #FFF;
+	transition: 0.3s;
+}.big-button:hover{
+	filter:brightness(200%);
+}
+div#particles-js {
+	position: absolute;
+	height: 100%;
+	width: 120%;
 }
