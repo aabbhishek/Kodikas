@@ -1,3 +1,28 @@
+if ('webkitSpeechRecognition' in window) {
+	var recognition =  new webkitSpeechRecognition;
+	recognition.continuous = true;
+	recognition.interimResults = true;
+	recognition.lang = "en-GB";
+
+	var s='';
+	recognition.onresult = function(event) {
+	  var singleSpeech='';
+	  var b = document.getElementById('but');
+	  // var d = document.getElementById('n');
+
+
+	   	for (var i = event.resultIndex; i < event.results.length; ++i) {
+	    	if (event.results[i].isFinal) {
+	        	s += event.results[i][0].transcript;
+	        	singleSpeech = event.results[i][0].transcript;
+	       	}
+	    }
+			console.log(s);
+	    $(".listenedText").html(s);
+	    $("#loaderSvgWrapper").fadeIn();
+	}
+
+}
 $(document).ready(function() {
 	$(".sidebar-open").on("click",function() {
 		if($(this).hasClass("active")) {
@@ -10,6 +35,8 @@ $(document).ready(function() {
 	});
 	$(".voice-open").on("click",function() {
 		$("#speak-modal").modal();
+		s='';
+		recognition.start();
 	});
 
 
@@ -65,7 +92,7 @@ $(document).ready(function() {
 
 	$(".click_to_speak").click(function(){
 		$("#speak-modal").modal();
-		$(".listenedText p").html('Speak...');
+		//$(".listenedText").html('Speak...');
 		s='';
 		recognition.start();
 	});
@@ -93,13 +120,13 @@ $(document).ready(function() {
 	});
 
 	$(".reset-speech").click(function(){
-		$(".listenedText p").html('Listening ...');
+		$(".listenedText").html('Listening ...');
 		s='';
 	});
 
 	$(".mic-speak").click(function(){
 		$("#model_speak_open").modal();
-		$(".listenedText p").html('Listening ...');
+		$(".listenedText").html('Listening ...');
 		s='';
 		recognition.start();
 	});
@@ -107,5 +134,10 @@ $(document).ready(function() {
 		recognition.stop();
 		$(".wysiwyg-editor").html(s);
 	});
-
+	$("#image-button").click(function() {
+		$("#imagecodegen").modal();
+	});
+	$("#NLP-button").click(function() {
+		$("#textcodegen").modal();
+	});
 });

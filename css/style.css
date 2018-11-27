@@ -523,3 +523,25 @@ div#particles-js {
 	height: 100%;
 	width: 120%;
 }
+.modal-img {
+    width: 99.6%;
+    max-width: unset;
+    height: 100%;
+    margin: 0;
+    transform: scale(0,0);
+		transition: 0.5s;
+		border-radius: 100%;
+		transform-origin: 50% 50%;
+		background-color: #fff;
+}
+.modal.show .modal-img {
+	border-radius: 0;
+	transform: scale(1,1);
+}
+.dropzone {
+	height: 85%;
+}
+.dropzone .dz-message {
+    position: relative;
+    top: 40%;
+}
